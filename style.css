@@ -1,0 +1,312 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.dn {
+	display: none;
+}
+body {
+
+font-family: 'Cousine', sans-serif;
+	height: 800px;
+	background: #D9D3C5;/*
+	background: url(diamondpattern.png) no-repeat #222;
+	background: url(diamondpattern.png), -webkit-linear-gradient(#555, #222) no-repeat, #222;
+	background: url(diamondpattern.png), -webkit-linear-gradient(#555, #222) no-repeat, #222;
+	background: url(diamondpattern.png), -moz-linear-gradient(#555, #222) no-repeat, #222;
+	background: url(diamondpattern.png), -ms-linear-gradient(#555, #222) no-repeat, #222;
+	background: url(diamondpattern.png), -o-linear-gradient(#555, #222) no-repeat, #222;
+	background: url(diamondpattern.png), linear-gradient(#555, #222) no-repeat, #222;
+	-pie-background: url(magnifyingglass.png), linear-gradient(#555, #222) no-repeat, #222;*/
+}
+
+#HeaderTable td {
+
+text-align:center;
+
+}
+#lefttd {min-width: 365px;
+}
+#middletd { padding-left:7px;
+}
+form {
+
+	position: relative;
+	width:323px;
+	height:65px;
+	margin: 10px 0 10px 5px;
+	color: #BBB;
+	padding:  5px 5px 5px 5px;
+	clear: both;
+
+	
+	text-shadow:1px 1px 1px #000;
+	
+	background: url(diamondpattern.png) no-repeat #888;
+	background: url(diamondpattern.png), -webkit-linear-gradient(rgba(178,152,119,1),rgba(103,61,39,1));
+	background: url(diamondpattern.png), -moz-linear-gradient(rgba(178,152,119,1),rgba(103,61,39,1));
+	background: url(diamondpattern.png), -ms-linear-gradient(rgba(178,152,119,1),rgba(103,61,39,1));
+	background: url(diamondpattern.png), -o-linear-gradient(rgba(178,152,119,1),rgba(103,61,39,1));
+	background: url(diamondpattern.png), linear-gradient(rgba(178,152,119,1),rgba(103,61,39,1));
+	-pie-background: url(diamondpattern.png), linear-gradient(rgba(178,152,119,1),rgba(103,61,39,1));
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius:10px;
+
+	-webkit-box-shadow: inset 0px 3px 20px #000;
+	-moz-box-shadow: inset 0px 3px 20px #000;
+	box-shadow: inset 0px 3px 20px #2;
+}
+#formleft{ width: 355px;
+}
+#formright{ color:white;
+			text-size:17px
+}
+input[type=radio] {
+	display: none;
+	position: relative;
+}
+
+/*div:not(#ray) > input[type=radio] {
+	display: none;
+}*/
+
+
+div:not(#ray) > input[type=radio] + label {
+	background: url('uikit.png') no-repeat;
+}
+
+div:not(#ray) > input[type=radio]:checked + label {
+	background-position: 0px -22px;
+}
+input {border:0px;}
+.group:before, .group:after { content: "\0020"; display: block; height: 0; overflow: hidden; }  
+.group:after { clear: both; }  
+.group { zoom: 1; }  
+.group {
+margin: 5px;
+padding: 0 0 0 10px;
+}
+
+div:not(#ray) > label	{
+	display: block;
+	float: left;
+	padding: 4px 10px 0 24px;
+	color: #FFF;
+	cursor: pointer;
+}
+#report_date, #report_date_not_today, #report_date_today,#report_date_to {
+	/*padding: 0 0 0 5px;
+	border-radius: 5px;*/
+	background-color:transparent;
+	font-size:20px;
+	text-align:center;
+	padding-top: 5px;
+	color: white;
+	/*float: left;*/
+}
+/*#report_date_to {
+	margin: 10px 0 0 0px;
+	height: 20px;
+	padding: 0 0 0 5px;
+	border-radius: 5px;
+	/*float: left;*/
+}
+#input_date_from, #input_date_to, #input_date_not_today, #input_date_today  {
+	clear: both;
+	display: none;
+	
+}
+br {display:none;}
+#bordering {
+	clear: both;
+	}
+#sum_walking{ padding-top:10px;
+}
+#table_walking, #table_game {
+	border: 2px solid black;
+	float: left;
+	height: 70%;
+	overflow: auto;
+	margin: 0 5px;
+}
+#table_walking, #iter_walking{
+width: 365px;
+}
+#table_game, #iter_gamer_and_err {
+width: 672px;
+}
+.gamer {  /*class for right table - for gamers*/
+	float: left;
+	width: 100%;
+	border: 1px #4F3105 solid;
+	}
+	
+.redcolor {
+	color: red;
+	padding-right:50px;
+}
+.bluecolor {
+	color: #4F3105;
+	padding-right:50px;
+}
+#iter_walking, #iter_gamer_and_err {
+	border: 2px solid black;
+	float: left;
+	height: 25%;
+	overflow: auto;
+	margin: 10px 5px 0 5px;
+}
+
+h2 {
+
+font-family: 'Cousine';
+font-size:21px;
+text-align: center;
+
+}
+
+/************style for datapicker**********/
+
+.ui-datepicker {
+	width: 365px;
+	height: auto;
+	margin: 5px auto 0;
+	font: 9pt Arial, sans-serif;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .5);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .5);
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .5);
+	left:7px !important;
+	top:95px !important;
+}
+.ui-datepicker a {
+	text-decoration: none;
+}
+.ui-datepicker table {
+	width: 100%;
+}
+.ui-datepicker-header {
+	background: url('img/dark_leather.png') repeat 0 0 #000;
+	color: #e0e0e0;
+	font-weight: bold;
+	-webkit-box-shadow: inset 0px 1px 1px 0px rgba(250, 250, 250, 2);
+	-moz-box-shadow: inset 0px 1px 1px 0px rgba(250, 250, 250, .2);
+	box-shadow: inset 0px 1px 1px 0px rgba(250, 250, 250, .2);
+	text-shadow: 1px -1px 0px #000;
+	filter: dropshadow(color=#000, offx=1, offy=-1);
+	line-height: 30px;
+	font-size:20px;
+	border-width: 1px 0 0 0;
+	border-style: solid;
+	border-color: #111;
+}
+.ui-datepicker-title {
+	text-align: center;
+}
+.ui-datepicker-prev, .ui-datepicker-next {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	cursor: pointer;
+	background-image: url('img/arrow.png');
+	background-repeat: no-repeat;
+	line-height: 600%;
+	overflow: hidden;
+}
+.ui-datepicker-prev {
+	float: left;
+	background-position: center -30px;
+}
+.ui-datepicker-next {
+	float: right;
+	background-position: center 0px;
+}
+.ui-datepicker thead {
+	background-color: #f7f7f7;
+	background-image: -moz-linear-gradient(top,  #f7f7f7 0%, #f1f1f1 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f7f7), color-stop(100%,#f1f1f1));
+	background-image: -webkit-linear-gradient(top,  #f7f7f7 0%,#f1f1f1 100%);
+	background-image: -o-linear-gradient(top,  #f7f7f7 0%,#f1f1f1 100%);
+	background-image: -ms-linear-gradient(top,  #f7f7f7 0%,#f1f1f1 100%);
+	background-image: linear-gradient(top,  #f7f7f7 0%,#f1f1f1 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#f1f1f1',GradientType=0 );
+	border-bottom: 1px solid #bbb;
+}
+.ui-datepicker th {
+	text-transform: uppercase;
+	font-size: 6pt;
+	padding: 5px 0;
+	color: #666666;
+	text-shadow: 1px 0px 0px #fff;
+	filter: dropshadow(color=#fff, offx=1, offy=0);
+}
+.ui-datepicker tbody td {
+	padding: 0;
+	border-right: 1px solid #bbb;
+}
+.ui-datepicker tbody td:last-child {
+	border-right: 0px;
+}
+.ui-datepicker tbody tr {
+	border-bottom: 1px solid #bbb;
+}
+.ui-datepicker tbody tr:last-child {
+	border-bottom: 0px;
+}
+.ui-datepicker td span, .ui-datepicker td a {
+	display: inline-block;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	width: 48px;
+	height: 45px;
+	line-height: 50px;
+	color: #666666;
+	text-shadow: 1px 1px 0px #fff;
+	filter: dropshadow(color=#fff, offx=1, offy=1);
+}
+.ui-datepicker-calendar .ui-state-default {
+	background: #ededed;
+	background: -moz-linear-gradient(top,  #ededed 0%, #dedede 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ededed), color-stop(100%,#dedede));
+	background: -webkit-linear-gradient(top,  #ededed 0%,#dedede 100%);
+	background: -o-linear-gradient(top,  #ededed 0%,#dedede 100%);
+	background: -ms-linear-gradient(top,  #ededed 0%,#dedede 100%);
+	background: linear-gradient(top,  #ededed 0%,#dedede 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#dedede',GradientType=0 );
+	-webkit-box-shadow: inset 1px 1px 0px 0px rgba(250, 250, 250, .5);
+	-moz-box-shadow: inset 1px 1px 0px 0px rgba(250, 250, 250, .5);
+	box-shadow: inset 1px 1px 0px 0px rgba(250, 250, 250, .5);
+}
+.ui-datepicker-unselectable .ui-state-default {
+	background: #f4f4f4;
+	color: #b4b3b3;
+}
+.ui-datepicker-calendar .ui-state-hover {
+	background: #f7f7f7;
+}
+.ui-datepicker-calendar .ui-state-active {
+	background: #B29877;
+	-webkit-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .1);
+	-moz-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .1);
+	box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .1);
+	color: #e0e0e0;
+	text-shadow: 0px 1px 0px #673D27;
+	filter: dropshadow(color=#673D27, offx=0, offy=1);
+	border: 1px solid #673D27;
+	position: relative;
+	margin: -1px;
+}
+.timemetka {
+	color: green;
+}
+#btn_report {
+	width: 200px;
+	height: 60px;
+	text-align: center;
+	margin: 10px 0 0 5px;
+}
+
+
